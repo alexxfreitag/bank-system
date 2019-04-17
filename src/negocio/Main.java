@@ -11,7 +11,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		inicializaSistemaBancario(); // criando algumas contas e clientes fictícios
+		inicializaSistemaBancario(); // criando algumas contas e clientes fictï¿½cios
 		
 		Scanner sc = new Scanner(System.in);
 		boolean continua = true;
@@ -32,7 +32,7 @@ public class Main {
 				if(cliente != null)
 					System.out.println(cliente.toString());
 				else
-					System.out.println("Cliente não encontrado!");
+					System.out.println("Cliente nï¿½o encontrado!");
 				
 				pulalinha();
 				break;
@@ -46,7 +46,7 @@ public class Main {
 				if(conta != null)
 					System.out.println(conta.toString());
 				else
-					System.out.println("Conta não encontrado!");
+					System.out.println("Conta nï¿½o encontrado!");
 				
 				pulalinha();
 				break;
@@ -63,7 +63,7 @@ public class Main {
 					System.out.println("Cliente ativado com sucesso!");
 				}
 				else
-					System.out.println("Cliente não encontrado!");
+					System.out.println("Cliente nï¿½o encontrado!");
 			
 				pulalinha();
 				break;
@@ -80,7 +80,7 @@ public class Main {
 					System.out.println("Cliente desativado com sucesso!");
 				}
 				else
-					System.out.println("Cliente não encontrado!");
+					System.out.println("Cliente nï¿½o encontrado!");
 				
 				pulalinha();
 				break;
@@ -111,11 +111,11 @@ public class Main {
 	}
 
 	/**
-	 * Imprime menu de opções do nosso sistema bancário
+	 * Imprime menu de opï¿½ï¿½es do nosso sistema bancï¿½rio
 	 */
 	private static void printMenu() {
 		
-		System.out.println("O que você deseja fazer? \n");
+		System.out.println("O que vocï¿½ deseja fazer? \n");
 		System.out.println("1) Consultar por um cliente");
 		System.out.println("2) Consultar por uma conta corrente");
 		System.out.println("3) Ativar um cliente");
@@ -126,8 +126,8 @@ public class Main {
 	}
 
 	/**
-	 * Método que cria e insere algumas contas e clientes no sistema do banco,
-	 * apenas para realização de testes manuais através do método main acima.
+	 * Mï¿½todo que cria e insere algumas contas e clientes no sistema do banco,
+	 * apenas para realizaï¿½ï¿½o de testes manuais atravï¿½s do mï¿½todo main acima.
 	 */
 	private static void inicializaSistemaBancario() {
 		// criando lista vazia de contas e clientes
@@ -141,7 +141,7 @@ public class Main {
 		contasDoBanco.add(conta02);
 		
 		// criando dois clientes e associando as contas criadas acima a eles
-		Cliente cliente01 = new Cliente(1, "Gustavo Farias", 31, "gugafarias@gmail.com", conta01.getId(), true);
+		Cliente cliente01 = new Cliente(1, "Alex Freitag", 31, "alexefreitag@gmail.com", conta01.getId(), true);
 		Cliente cliente02 = new Cliente(2, "Felipe Augusto", 34, "felipeaugusto@gmail.com", conta02.getId(), true);
 		// inserindo os clientes criados na lista de clientes do banco
 		clientesDoBanco.add(cliente01);

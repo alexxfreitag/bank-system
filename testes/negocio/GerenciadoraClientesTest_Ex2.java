@@ -16,7 +16,7 @@ public class GerenciadoraClientesTest_Ex2 {
 	public void testPesquisaCliente() {
 
 		// criando alguns clientes
-		Cliente cliente01 = new Cliente(1, "Gustavo Farias", 31, "gugafarias@gmail.com", 1, true);
+		Cliente cliente01 = new Cliente(1, "Alex Freitag", 31, "alexefreitag@gmail.com", 1, true);
 		Cliente cliente02 = new Cliente(2, "Felipe Augusto", 34, "felipeaugusto@gmail.com", 2, true);
 		
 		// inserindo os clientes criados na lista de clientes do banco
@@ -36,7 +36,7 @@ public class GerenciadoraClientesTest_Ex2 {
 	public void testRemoveCliente() {
 
 		// criando alguns clientes
-		Cliente cliente01 = new Cliente(1, "Gustavo Farias", 31, "gugafarias@gmail.com", 1, true);
+		Cliente cliente01 = new Cliente(1, "Alex Freitag", 31, "alexefreitag@gmail.com", 1, true);
 		Cliente cliente02 = new Cliente(2, "Felipe Augusto", 34, "felipeaugusto@gmail.com", 2, true);
 		
 		// inserindo os clientes criados na lista de clientes do banco

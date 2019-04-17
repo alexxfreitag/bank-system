@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Classe de negócio para realizar operações sobre as contas do banco.
- * @author Gustavo Farias
+ * @author Alex Freitag
  */
 public class GerenciadoraContas {
 
