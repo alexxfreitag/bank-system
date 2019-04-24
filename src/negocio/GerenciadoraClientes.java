@@ -3,7 +3,7 @@ package negocio;
 import java.util.List;
 
 /**
- * Classe de negócio para realizar operações sobre os clientes do banco.
+ * Classe de negï¿½cio para realizar operaï¿½ï¿½es sobre os clientes do banco.
  * @author Alex Freitag
  */
 public class GerenciadoraClientes {
@@ -25,7 +25,7 @@ public class GerenciadoraClientes {
 	/**
 	 * Pesquisa por um cliente a partir do seu ID.
 	 * @param idCliente id do cliente a ser pesquisado
-	 * @return o cliente pesquisado ou null, caso não seja encontrado
+	 * @return o cliente pesquisado ou null, caso nï¿½o seja encontrado
 	 */
 	public Cliente pesquisaCliente (int idCliente) {
 
@@ -37,7 +37,7 @@ public class GerenciadoraClientes {
 	}
 	
 	/**
-	 * Adiciona um novo cliente à lista de clientes do banco.
+	 * Adiciona um novo cliente ï¿½ lista de clientes do banco.
 	 * @param novoCliente novo cliente a ser adicionado
 	 */
 	public void adicionaCliente (Cliente novoCliente) {
@@ -47,7 +47,7 @@ public class GerenciadoraClientes {
 	/**
 	 * Remove cliente da lista de clientes do banco.
 	 * @param idCliente ID do cliente a ser removido 
-	 * @return true se o cliente foi removido. False, caso contrário.
+	 * @return true se o cliente foi removido. False, caso contrï¿½rio.
 	 */
 	public boolean removeCliente (int idCliente) {
 		boolean clienteRemovido = false;
@@ -65,26 +65,6 @@ public class GerenciadoraClientes {
 	}
 
 	/**
-	 * Informa se um determinado cliente está ativo ou não.
-	 * @param idCliente ID do cliente cujo status será verificado
-	 * @return true se o cliente está ativo. False, caso contrário. 
-	 */
-	public boolean clienteAtivo (int idCliente) {
-		boolean clienteAtivo = false;
-		
-		for (int i = 0; i < clientesDoBanco.size(); i++) {
-			Cliente cliente = clientesDoBanco.get(i);
-			if(cliente.getId() == idCliente)
-				if(cliente.isAtivo()){
-					clienteAtivo = true;
-					break;
-				}
-		}
-		
-		return clienteAtivo;
-	}
-
-	/**
 	 * Limpa a lista de clientes, ou seja, remove todos eles. 
 	 */
 	public void limpa() {
@@ -92,8 +72,8 @@ public class GerenciadoraClientes {
 	}
 	
 	/**
-	 * Valida se a idade do cliente está dentro do intervalo permitido (18 - 65).
-	 * @param idade a idade do possível novo cliente
+	 * Valida se a idade do cliente estÃ¡ dentro do intervalo permitido (18 - 65).
+	 * @param idade a idade do possÃ­vel novo cliente
 	 */
 	public boolean validaIdade(int idade) throws IdadeNaoPermitidaException {
 	

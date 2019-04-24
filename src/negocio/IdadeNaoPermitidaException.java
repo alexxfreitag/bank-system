@@ -1,7 +1,7 @@
 package negocio;
 
 /**
- * Exceção a ser lançada quando a idade de um possível novo cliente não for aceita.
+ * ExceÃ§Ã£o a ser lanÃ§ada quando a idade de um possÃ­vel novo cliente nÃ£o for aceita.
  * 
  * @author Alex Freitag
  */

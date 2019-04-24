@@ -5,10 +5,13 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 
 /**
  * Classe de teste criada para garantir o funcionamento das principais opera��es
@@ -21,17 +24,22 @@ public class GerenciadoraContasTest_Ex11 {
 
 	private GerenciadoraContas gerContas;
 	
+	@Rule
+    public Timeout globalTimeout = Timeout.seconds(1);
+	
 	/**
 	 * Teste b�sico da transfer�ncia de um valor da conta de um cliente para outro,
 	 * estando ambos os clientes ativos e havendo saldo suficiente para tal transfer�ncia
 	 * ocorrer com sucesso.
 	 * 
 	 * @author Alex Freitag
+	 * @throws InterruptedException 
 	 * @date 21/01/2035
 	 */
 	@Test
-	public void testTransfereValor() {
-
+	public void testTransfereValor() throws InterruptedException {
+		
+		TimeUnit.SECONDS.sleep(2);
 		/* ========== Montagem do cen�rio ========== */
 		
 		// criando alguns clientes

@@ -32,7 +32,7 @@ public class Main {
 				if(cliente != null)
 					System.out.println(cliente.toString());
 				else
-					System.out.println("Cliente n�o encontrado!");
+					System.out.println("Cliente não encontrado!");
 				
 				pulalinha();
 				break;
@@ -46,45 +46,10 @@ public class Main {
 				if(conta != null)
 					System.out.println(conta.toString());
 				else
-					System.out.println("Conta n�o encontrado!");
+					System.out.println("Conta não encontrado!");
 				
 				pulalinha();
 				break;
-
-			// Ativar um cliente
-			case 3:
-				
-				System.out.print("Digite o ID do cliente: ");
-				int idCliente2 = sc.nextInt();
-				Cliente cliente2 = gerClientes.pesquisaCliente(idCliente2);
-				
-				if(cliente2 != null){
-					cliente2.setAtivo(true);
-					System.out.println("Cliente ativado com sucesso!");
-				}
-				else
-					System.out.println("Cliente n�o encontrado!");
-			
-				pulalinha();
-				break;
-				
-			// Desativar um cliente
-			case 4:
-				
-				System.out.print("Digite o ID do cliente: ");
-				int idCliente3 = sc.nextInt();
-				Cliente cliente3 = gerClientes.pesquisaCliente(idCliente3);
-				
-				if(cliente3 != null){
-					cliente3.setAtivo(false);
-					System.out.println("Cliente desativado com sucesso!");
-				}
-				else
-					System.out.println("Cliente n�o encontrado!");
-				
-				pulalinha();
-				break;
-			
 			// Sair
 			case 5:
 				continua = false;
@@ -115,11 +80,9 @@ public class Main {
 	 */
 	private static void printMenu() {
 		
-		System.out.println("O que voc� deseja fazer? \n");
+		System.out.println("O que você deseja fazer? \n");
 		System.out.println("1) Consultar por um cliente");
 		System.out.println("2) Consultar por uma conta corrente");
-		System.out.println("3) Ativar um cliente");
-		System.out.println("4) Desativar um cliente");
 		System.out.println("5) Sair");
 		System.out.println();
 		
@@ -141,8 +104,8 @@ public class Main {
 		contasDoBanco.add(conta02);
 		
 		// criando dois clientes e associando as contas criadas acima a eles
-		Cliente cliente01 = new Cliente(1, "Alex Freitag", 31, "alexefreitag@gmail.com", conta01.getId(), true);
-		Cliente cliente02 = new Cliente(2, "Felipe Augusto", 34, "felipeaugusto@gmail.com", conta02.getId(), true);
+		Cliente cliente01 = new Cliente(1, "Alex Freitag", 31, "alexefreitag@gmail.com", conta01.getId());
+		Cliente cliente02 = new Cliente(2, "Felipe Augusto", 34, "felipeaugusto@gmail.com", conta02.getId());
 		// inserindo os clientes criados na lista de clientes do banco
 		clientesDoBanco.add(cliente01);
 		clientesDoBanco.add(cliente02);
